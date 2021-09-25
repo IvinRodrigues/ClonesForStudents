@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;500&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+
+    background-color: #121212;
+
+}
+
+header {
+
+    /* background-color: salmon; */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+}
+
+header nav, header nav ul {
+
+    display: flex;
+
+}
+
+header nav:nth-child(1) {
+
+    background-color: #2a2a2a;
+    padding-inline: 20px;
+    height: 52px;
+    overflow: hidden;
+    gap: 28px;
+
+}
+
+header nav:nth-child(1) img {
+
+    width: 36px;
+    margin-block: 6px;
+
+}
+
+header nav:nth-child(1) ul {
+
+    list-style: none;
+
+}
+
+header nav:nth-child(1) a {
+
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 11px;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+    display: block;
+    padding-inline: 16px;
+    line-height: 52px;
+    position: relative;
+    transition: .2s;
+    opacity: .6;
+
+}
+
+header nav:nth-child(1) a:hover {
+
+    opacity: 1;
+
+}
+
+header nav:nth-child(1) a::before {
+
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #0078f2;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .2s;
+
+}
+
+header nav:nth-child(1) a:hover::before {
+
+    bottom: 0;
+
+}
+
+header nav:nth-child(2) {
+
+    background: rgba(18, 18, 18, 0.9);
+    backdrop-filter: blur(25px);
+    height: 100px;
+
+}
+
+header nav:nth-child(2) div {
+
+    width: 75%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav:nth-child(2) ul {
+
+    list-style: none;
+
+}
+
+header nav:nth-child(2) li a {
+
+    color: #ffffff9f;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+    display: block;
+    padding-inline: 16px;
+    line-height: 52px;
+    position: relative;
+    transition: .2s;
+
+}
+
+header nav:nth-child(2) li a:first-child {
+
+    padding-left: 0;
+
+}
+
+header nav:nth-child(2) input {
+
+    color: white;
+    background-color: #2a2a2a;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: .2s;
+
+}
+
+header nav:nth-child(2) input:focus {
+
+    background-color: #3f3f3f;
+
+}
+
+header nav:nth-child(2) input::placeholder {
+
+    font-weight: bold;
+
+}
+
+main {
+
+    width: 75%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+main .carousel-section {
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: 'main aside';
+    gap: 32px;
+
+}
+
+main .carousel-section main {
+
+    background-image: url('https://cdn2.unrealengine.com/1248x702-unbranded-key-1248x702-b308c2b42091.png?h=1080&resize=1&w=1920');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+    height: 700px;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 72px 48px;
+    gap: 12px;
+
+}
+
+.carousel-section main img {
+
+    width: 260px;
+    margin-bottom: 24px;
+
+}
+
+.carousel-section main h1, .carousel-section main p {
+
+    color: white;
+
+}
+
+.carousel-section main h1 {
+
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+.carousel-section main p {
+
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 300px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.carousel-section main button {
+
+    width: fit-content;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 18px 24px;
+    margin-top: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+main .carousel-section aside {
+
+    height: 700px;
+    max-height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    gap: 8px;
+
+}
+
+.carousel-section aside div {
+
+    width: 100%;
+    height: 200px;
+    /* background-color: white; */
+    border-radius: 12px;
+
+}
+
+.carousel-section .carousel-item {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    transition: .2s;
+
+}
+
+.carousel-section .carousel-item:hover {
+
+    background-color: rgba(255, 255, 255, 0.075);
+
+}
+
+.carousel-section .carousel-item img {
+
+    /* height: 100%; */
+    width: 30%;
+    border-radius: 4px;
+    object-fit: cover;
+
+}
+
+.carousel-section .carousel-item h1 {
+
+    color: white;
+    font-size: 16px;
+
+}
+
+.sales-section {
+
+    margin-top: 42px;
+
+}
+
+.sales-section h1 {
+
+    font-size: 16px;
+    color: white;
+    margin-bottom: 24px;
+
+}
+
+.sales-section .games {
+
+    display: flex;
+    gap: 16px;
+
+}
+
+.sales-section .games div {
+
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.sales-section .game {
+
+    transition: .2s;
+
+}
+
+.sales-section .game:hover {
+
+    filter: brightness(150%);
+
+}
+
+.sales-section .game img {
+
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.sales-section .game h1, .sales-section .game h2 {
+
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.sales-section .game h1 {
+
+    margin: 20px 0 0;
+
+}
+
+.sales-section .game h2 {
+
+    opacity: .4;
+
+}
