@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background-color: black;
+
+}
+
+.main-menu {
+
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    padding: 24px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+
+}
+
+.main-menu ul {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 42px;
+    list-style: none;
+
+}
+
+.main-menu ul a {
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.main-menu ul a:hover {
+
+    color: white;
+
+}
+
+main {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.introduction {
+
+
+
+}
+
+.introduction h1 {
+
+    color: white;
+    font-size: 82px;
+    margin-top: 72px;
+
+}
+
+.socials {
+
+    margin-top: 32px;
+
+}
+
+.socials a {
+
+    text-decoration: none;
+
+}
+
+.socials a img {
+
+    width: 72px;
+    opacity: .5;
+
+}
+
+.socials a img:hover {
+
+    opacity: 1;
+
+}
+
+.introduction article {
+
+    margin-top: 32px;
+    display: flex;
+    gap: 200px;
+
+}
+
+.introduction article p {
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.introduction article p a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.introduction article p a:hover {
+
+    color: rgb(253, 32, 142);
+
+}
+
+.introduction article img {
+
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 32px;
+
+}
+
+.works {
+
+
+}
+
+.section-title {
+
+    color: white;
+    font-size: 48px;
+    margin-top: 200px;
+
+}
+
+.works article {
+
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.works article h1 {
+
+    color: white;
+    font-size: 32px;
+
+}
+
+.works article p {
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    line-height: 30px;
+    margin: 18px 0 32px;
+
+}
+
+.works article a {
+
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+.works .infos {
+
+    width: 500px;
+
+}
+
+.works .images {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 200px;
+
+}
+
+.works .images img {
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 32px;
+
+}
